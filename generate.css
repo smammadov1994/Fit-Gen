@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+/*Header*/
+
+header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 120vw;
+  background-color: #000000;
+  padding: 15px 15px;
+}
+header .container {
+  -webkit-display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+header .logo a span {
+  color: #c11325;
+}
+
+/*hero*/
+.container-1 {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+.first-grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #166faa;
+  position: relative;
+  overflow: hidden;
+  background-color: #166faa;
+  display: inline-block;
+  left: 40%;
+  bottom: 10px;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgb(255, 255, 255),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+
+/*rules*/
+.rules {
+  display: flex;
+  background-color: #c11325;
+  justify-content: center;
+  align-items: center;
+}
+.container-2 {
+  margin: 0;
+  width: 50vw;
+}
+
+#container-2 {
+  position: relative;
+}
+
+.rules .content {
+  -webkit-display: flex;
+  display: flex;
+  margin: 0 auto;
+}
+
+.rules .content .box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.rules .content .text h2 {
+  text-align: start;
+  font-size: 80px;
+  font-weight: 900;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+}
+
+.rules .content .text p {
+  margin: 0 auto;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0px 0px 20px;
+}
+.generate-rules {
+  border: 1px solid #166faa;
+  background-color: #166faa;
+  color: white;
+  padding: 5px;
+}
+
+.content-workout {
+  position: relative;
+  top: 10px;
+  height: 80%;
+  width: 1000px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

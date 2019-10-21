@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workout Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Header  -->
+    <header>
+      <div class="container" id="header-region">
+        <div class="logo">
+          <a href="index.html" class="logo text"
+            >Fitness <span class="logo-text">Club</span></a
+          >
+          <a href="#choice" class="go-down">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
+        </div>
+        <a href="javascript:void(0)" class="ham-burger">
+          <span></span>
+          <span></span>
+        </a>
+        <div class="nav">
+          <ul>
+            <li><a href="#about">Concept</a></li>
+            <li><a href="#choice">Choose</a></li>
+            <li><a href="#generate">End.</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End Header  -->
+
+    <!-- Start Home -->
+    <section class="home">
+      <div class="container" id="home-text">
+        <h1 class="h1-home-text-1">
+          <span class="logo-color-1">Break your</span> &nbsp;
+          <span> workout plateau.</span>
+        </h1>
+      </div>
+      <!--go down-->
+
+      <!--go down-->
+    </section>
+    <section class="about" id="about">
+      <div class="container-1" id="container-2">
+        <div class="content" id="how-to-content">
+          <div class="text box wow slideInLeft">
+            <h2>How it works</h2>
+            <p>
+              Click on a muscle group to generate a choice-specific workout. The
+              generator will instantly produce a workout routine for the user.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--start-->
+    <!-- Start About -->
+    <section class="choice" id="choice">
+      <div class="container-1" id="container-1">
+        <div class="content">
+          <div class="box wow bounceInUp" data-wow-delay="0.4s">
+            <div class="inner" id="legs">
+              <div class="img">
+                <img src="images/adult-athlete-dark-136404.jpg" />
+              </div>
+              <div class="text">
+                <h4>Legs</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.2s">
+            <div class="inner" id="shoulders">
+              <div class="img">
+                <img
+                  src="./images/action-adult-athlete-2078062.jpg"
+                  alt="about"
+                />
+              </div>
+              <div class="text">
+                <h4>Shoulders</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.4s">
+            <div class="inner" id="chest">
+              <div class="img">
+                <img src="./images/bench-press-benefits.jpg" alt="about" />
+              </div>
+              <div class="text">
+                <h4>Chest</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.4s">
+            <div class="inner" id="back">
+              <div class="img">
+                <img
+                  src="./images/cathy-pham-3jAN9InapQI-unsplash.jpg"
+                  alt="about"
+                />
+              </div>
+              <div class="text">
+                <h4>Back</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp bounce-2" data-wow-delay="0.4s">
+            <div class="inner" id="arms">
+              <img src="./images/bicep curl.jpg" class="arms" alt="about" />
+              <div class="text">
+                <h4>Arms</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box wow bounceInUp" data-wow-delay="0.4s">
+            <div class="inner" id="core">
+              <div class="img">
+                <img
+                  src="./images/abs-action-athlete-2294363.jpg"
+                  alt="about"
+                />
+                <div class="text">
+                  <h4>Core</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+    <!--workout print-->
+
+    <!-- Start Generate view-->
+    <section class="generate" id="generate">
+      <div class="container">
+        <div class="content">
+          <div class="box text wow slideInLeft">
+            <div class="box timing wow slideInRight">
+              <img src="images/schedule1.png" alt="generate-view" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Generate View -->
+      <div class="contact" id="contact">
+        <div class="container container-last" id="last-container">
+          <div class="first-grid" id="first-grid"></div>
+          <h1 class="contact-us">Contact Us.</h1>
+          <div class="start-color">Click Here</div>
+        </div>
+      </div>
+    </section>
+    <!--jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/new.js"></script>
+    <script src="./js/generatework.js"></script>
+  </body>
+</html>
