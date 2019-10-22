@@ -13,7 +13,7 @@ $(".ham-burger").click(function() {
 // contact button
 const $contact = $(".start-color");
 $contact.click(function() {
-  alert("Call (203)-550-5246?");
+  // alert("Call (203)-550-5246?");
 });
 //
 

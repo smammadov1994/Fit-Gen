@@ -33,10 +33,10 @@ $(() => {
   };
   const generateTable = lendata => {
     console.log(lendata);
-    if (screen.width > 800 && lendata > 15) {
-      lendata = 15;
-    } else if (screen.width < 800 && lendata > 9) {
-      lendata = 9;
+    if (screen.width > 800 && lendata > 8) {
+      lendata = 8;
+    } else if (screen.width < 800 && lendata > 6) {
+      lendata = 6;
     }
     for (i = 0; i < lendata; i++) {
       console.log(lendata);
