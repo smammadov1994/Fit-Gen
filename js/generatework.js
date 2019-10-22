@@ -7,7 +7,7 @@ $(() => {
   const generateData = () => {
     $(".choice").on("click", ".inner", function() {
       let grab = $(this).attr("id");
-      fetch(`https://flaskapp.dmbernaal.now.sh/workout/${grab}`)
+      fetch(`https://workoutgen.herokuapp.com/workout/${grab}`)
         .then(response => {
           return response.json();
         })
@@ -17,7 +17,7 @@ $(() => {
           repsArray = [];
           for (i in data.workouts) {
             let workout = data.workouts[i].exercise;
-            let set = data.workouts[i].set;
+            let set = data.workouts[i].sets;
             let reps = data.workouts[i].reps;
             workoutArray.push(workout);
             setArray.push(set);
@@ -33,10 +33,10 @@ $(() => {
   };
   const generateTable = lendata => {
     console.log(lendata);
-    if (screen.width > 800 && lendata > 8) {
+    if (screen.width > 800 && lendata > 9) {
+      lendata = 9;
+    } else if (screen.width < 800 && lendata > 8) {
       lendata = 8;
-    } else if (screen.width < 800 && lendata > 6) {
-      lendata = 6;
     }
     for (i = 0; i < lendata; i++) {
       console.log(lendata);
@@ -48,7 +48,7 @@ $(() => {
       $table.append($header);
       $set = $('<h4 class = "setTitle">')
         .attr("id", `set${i}`)
-        .text(`set: ${setArray[i]}`);
+        .text(`sets: ${setArray[i]}`);
       $header.append($set);
       $reps = $('<h5 class = "repsTitle">')
         .attr("id", `reps${i}`)
