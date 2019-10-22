@@ -42,33 +42,38 @@ window.addEventListener("scroll", function(event) {
     $("#contact").css("animation", "slideContact 2s forwards");
   }
 });
-
 const imageClick = document.querySelector("#legs");
 imageClick.addEventListener("click", function() {
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });
 const imageClickTwo = document.querySelector("#shoulders");
 imageClickTwo.addEventListener("click", function() {
   console.log("clicked!");
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });
 const imageClickThree = document.querySelector("#chest");
 imageClickThree.addEventListener("click", function() {
   console.log("clicked!");
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });
 const imageClickFour = document.querySelector("#back");
 imageClickFour.addEventListener("click", function() {
   console.log("clicked!");
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });
 const imageClickFive = document.querySelector("#arms");
 imageClickFive.addEventListener("click", function() {
   console.log("clicked!");
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });
 const imageClickSix = document.querySelector("#core");
 imageClickSix.addEventListener("click", function() {
   console.log("clicked!");
   $("#first-grid").css("visibility", "visible");
+  $("#first-grid").empty();
 });

@@ -12,6 +12,9 @@ $(() => {
           return response.json();
         })
         .then(data => {
+          workoutArray = [];
+          setArray = [];
+          repsArray = [];
           for (i in data.workouts) {
             let workout = data.workouts[i].exercise;
             let set = data.workouts[i].set;
