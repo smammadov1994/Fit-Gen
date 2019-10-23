@@ -60,6 +60,9 @@ header .nav.open {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
+img {
+  filter: brightness(70%);
+}
 header .nav ul {
   list-style: none;
   margin: 0;
@@ -269,10 +272,10 @@ h1 span {
   font-family: "Open Sans", sans-serif;
 }
 
-.arms {
+/* .arms {
   height: 35vh !important;
   width: 25vw !important;
-}
+} */
 
 /*Service Section*/
 .about {
@@ -533,18 +536,19 @@ h4 {
     transform: translateY(-1200px);
   }
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
   .header .container {
     position: static;
   }
+
   header .ham-burger span {
     position: relative;
     float: none;
     padding-right: 20px;
     animation: none !important;
-  }
-  header {
-    width: -webkit-fill-available;
   }
   header .logo a {
     position: relative;
@@ -601,13 +605,12 @@ h4 {
     z-index: 1;
     height: auto;
   }
-  .arms {
-    height: auto !important;
-  }
+
   .bounce-2 {
     position: relative;
   }
   .choice .content .box {
+    display: flex;
     padding: 15px;
     transition: transform 0.2s;
     align-self: baseline;
@@ -653,5 +656,18 @@ h4 {
   .choice .content .box .inner .text h4 {
     background-color: black;
     padding-bottom: 2px;
+  }
+  .container-1 {
+    display: flex;
+    /* margin: 0; */
+    min-height: auto;
+    /* width: 50vw; */
+    flex-direction: column;
+  }
+  .choice .content .box .inner .img img {
+    display: flex;
+    background-color: black;
+    z-index: 1;
+    height: 80px;
   }
 }
